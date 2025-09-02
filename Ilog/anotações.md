@@ -12,4 +12,19 @@
 - **git push**: envia os commits locais para o repositório remoto.  
 - **git pull**: obtém as últimas atualizações do branch atual a partir do repositório remoto.  
   - É um atalho para `fetch + merge`.  
-- **git fetch origin**: busca as últimas alterações de um branch do repositório remoto sem mesclá-las.  
+- **git fetch origin**: busca as últimas alterações de um branch do repositório remoto sem mesclá-las. 
+
+
+# Comandos Git – Branches
+
+- **git branch**: lista os *branches* disponíveis.  
+- **git branch -a**: lista todos os *branches*, incluindo os remotos.  
+- **git branch novobranch**: cria um novo *branch* com o nome `novobranch`.  
+- **git checkout outrobranch**: muda o *working directory* para o *branch* indicado (`outrobranch`).  
+- **git checkout -b novobranch**: cria um novo *branch* e automaticamente alterna para ele.  
+- **git branch -m nome novo_nome**: renomeia um *branch*.  
+- **git branch -d nomebranch**: deleta um *branch*.  
+  - Com o parâmetro **-D**, força a exclusão mesmo que haja alterações não commitadas ou não mescladas.  
+- **git push origin nomebranch**: envia as alterações para o repositório remoto no *branch* `nomebranch`.  
+  - Se o *branch* remoto não existir, será criado automaticamente.  
+- **git merge nomebranch**: mescla as alterações do *branch* indicado com o *branch* atual.  
